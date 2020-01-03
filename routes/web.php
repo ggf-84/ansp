@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/admin/import_excel', 'XlsDataController@index');
+Route::post('/import_excel/import', 'XlsDataController@import');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
