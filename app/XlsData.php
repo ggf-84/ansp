@@ -72,7 +72,7 @@ class XlsData extends Model {
     ];
 
     public $appends = [
-        'years', //'y2017'
+        'years', //'y2017',
     ];
 
     public $timestamps = true;
